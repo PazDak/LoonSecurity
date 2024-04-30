@@ -17,11 +17,14 @@ One area that many scanners and detections fail to lack is having up to date CVE
 
 ## Setup
 ```python
+from LoonSec import NVDValidator
 s = //Crowdstrike Vulnerability Dict
-feather = LoonSec(nvd_api_key="YourKey")
+feather = NVDValidator(nvd_api_key="YourKey")
 vulns = feather.find_vuln_ids(s)
 print(vulns)
 ```
+
+Response:
 
 ```json
 {
