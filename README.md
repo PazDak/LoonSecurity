@@ -26,7 +26,7 @@ print(vulns)
 ```json
 {
  "key_vulns": ["CVE-2021-11111"],
- "found_vulns: ["CVE-2021-11111", "CVE-2022-99999"]
+ "found_vulns": ["CVE-2021-11111", "CVE-2022-99999"]
 }
 ```
 ## Add NVD Vulnerability to 3rd party scanner result
