@@ -15,6 +15,16 @@ One area that many scanners and detections fail to lack is having up to date CVE
 
 # Use Cases
 
+## NVDValidator
+
+Set of services used to extract vulnerability information from Dictionaries and String Objects. 
+
+## NVDApi
+
+Set of services used to interact with the NVD API either with a token or not. A token GREATLY improves performance request from the below link
+
+https://nvd.nist.gov/developers/request-an-api-key
+
 ## Setup
 ```python
 from LoonSec import NVDValidator
