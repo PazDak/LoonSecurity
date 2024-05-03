@@ -61,23 +61,25 @@ print(vulns)
 
 Response:
 ```json
-{"CVE-2022-99999": {"nvd_details": {}, "cve_meta":{
+{"CVE-2022-99999": {
+   "nvd_details": {},
+   "cve_meta":{
             "cve_id": "",
             "section": "cve-meta",
             "cvss_severity": "",
             "cvss_severity_source": "",
-            "cvss_severity_dtg": None,
+            "cvss_severity_dtg": null,
             "impact_md5": "",
-            "impact_dtg": None,
-            "impact_user_interaction_required": None,
-            "impact_known_exploit_exists": None,
-            "impact_known_exploit_exists_dtg": None,
-            "impact_known_exploit_resolution_dtg": None,
+            "impact_dtg": null,
+            "impact_user_interaction_required": null,
+            "impact_known_exploit_exists": null,
+            "impact_known_exploit_exists_dtg": null,
+            "impact_known_exploit_resolution_dtg": null,
             "configurations_md5": "",
-            "configurations_dtg": None,
+            "configurations_dtg": null,
             "configuration_keys": [],
             "nvd_status": "",
-            "nvd_status_dtg": None,
+            "nvd_status_dtg": null,
             "cisa_due_date": null
         }}
 ```
