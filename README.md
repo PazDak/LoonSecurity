@@ -41,7 +41,8 @@ Response:
  "key_vulns": ["CVE-2021-11111"],
  "found_vulns": ["CVE-2021-11111", "CVE-2022-99999"]
  "cve_details": {
-   "CVE-2021-11111": {"nvd_details": {}, "cve_meta":{}}
+   "CVE-2021-11111": {"nvd_details": {}, "cve_meta":{}},
+   "CVE-2022-99999": {"nvd_details": {}, "cve_meta":{}}
 }
 
 
