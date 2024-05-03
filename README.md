@@ -61,7 +61,7 @@ print(vulns)
 
 Response:
 ```json
-"CVE-2022-99999": {"nvd_details": #//NVD Response, "cve_meta":#//CVE Meta Response}
+{"CVE-2022-99999": {"nvd_details": #//NVD Response, "cve_meta":#//CVE Meta Response}
 ```
 
 ## Feed a large set of CVE's
