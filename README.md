@@ -51,6 +51,18 @@ Response:
 ## Add NVD Vulnerability to 3rd party scanner result
 
 ## Query NVD for a Record
+```python
+from LoonSec import NVDApi
+cve_id = "CVE-2022-99999"
+feather = NVDApi(nvd_api_key="YourKey")
+vuln = feather.querry_cve_id(cve_id)
+print(vulns)
+```
+
+Response:
+```json
+"CVE-2022-99999": {"nvd_details": #//NVD Response, "cve_meta":#//CVE Meta Response}
+```
 
 ## Feed a large set of CVE's
 
