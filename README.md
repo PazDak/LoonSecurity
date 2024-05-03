@@ -78,7 +78,7 @@ Response:
             "configuration_keys": [],
             "nvd_status": "",
             "nvd_status_dtg": None,
-            "cisa_due_date": Null,
+            "cisa_due_date": null
         }}
 ```
 
