@@ -39,13 +39,31 @@ Response:
 ```json
 {
  "key_vulns": ["CVE-2021-11111"],
- "found_vulns": ["CVE-2021-11111", "CVE-2022-99999"]
+ "found_vulns": ["CVE-2021-11111", "CVE-2022-99999"],
  "cve_details": {
    "CVE-2021-11111": {"nvd_details": {}, "cve_meta":{}},
    "CVE-2022-99999": {"nvd_details": {}, "cve_meta":{}}
+ }
 }
+```
 
+## Embed NVD Data
 
+```python
+from LoonSec import NVDValidator
+some_item = {
+    "cve_id": "CVE-2024-31497"
+}
+feather = NVDValidator(nvd_api_key="YourKey")
+feather.embed_details(some_item)
+print(some_item)
+```
+
+Response:
+```json
+{
+    "cve_id": "CVE-2024-31497",
+    "cve_meta": {"nvd_details": {}, "cve_meta":{}}
 }
 ```
 ## Add NVD Vulnerability to 3rd party scanner result
@@ -62,28 +80,30 @@ print(vulns)
 Response:
 ```json
 {
-    "CVE-2022-99999": {
-        "nvd_details": {},
-        "cve_meta": {
-            "cve_id": "",
-            "section": "cve-meta",
-            "cvss_severity": "",
-            "cvss_severity_source": "",
-            "cvss_severity_dtg": null,
-            "impact_md5": "",
-            "impact_dtg": null,
-            "impact_user_interaction_required": null,
-            "impact_known_exploit_exists": null,
-            "impact_known_exploit_exists_dtg": null,
-            "impact_known_exploit_resolution_dtg": null,
-            "configurations_md5": "",
-            "configurations_dtg": null,
-            "configuration_keys": [],
-            "nvd_status": "",
-            "nvd_status_dtg": null,
-            "cisa_due_date": null
-        }
+  "CVE-2022-99999": {
+    "nvd_details": {},
+    "cve_meta": {
+      "cve_id": "",
+      "section": "cve-meta",
+      "cvss_severity": "",
+      "cvss_severity_source": "",
+      "cvss_severity_dtg": null,
+      "impact_md5": "",
+      "impact_dtg": null,
+      "impact_user_interaction_required": null,
+      "impact_known_exploit_exists": null,
+      "impact_known_exploit_exists_dtg": null,
+      "impact_known_exploit_resolution_dtg": null,
+      "configurations_md5": "",
+      "configurations_dtg": null,
+      "configuration_keys": [],
+      "nvd_status": "",
+      "nvd_status_dtg": null,
+      "cisa_due_date": null
     }
+  }
+}
+
 ```
 
 ## Feed a large set of CVE's
