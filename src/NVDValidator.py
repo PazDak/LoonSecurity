@@ -72,3 +72,4 @@ class NVDValidator:
             item['loon_sec']['cve_details'][cve_id] = cve_details
             if 'cve' in keys:
                 cve_details['cve'] = self.nvd_api.get_cve_detail(cve_id)
+
