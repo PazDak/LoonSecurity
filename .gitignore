@@ -187,5 +187,5 @@ Temporary Items
 #
 temp/*
 */temp/*
-
-
+test.py
+test*.py
